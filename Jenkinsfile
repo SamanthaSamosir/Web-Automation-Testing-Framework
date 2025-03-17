@@ -63,18 +63,15 @@ pipeline {
                 bat 'npx allure generate ${ALLURE_RESULTS} --clean -o ${ALLURE_REPORT}'
             }
         }
-        
         stage('Publish Allure Report') {
             steps {
-                script {
-                    allure([
-                        results: [[path: 'allure-results']],
-                        report: [[path: 'allure-report']],
-                        commandline: 'Allure' // Use the name configured in Global Tool Configuration
-                    ])
-                }
+                allure([
+                    commandline: 'Allure',
+                    results: ['allure-results']
+                ])
             }
         }
+
         
         stage('Archive Screenshots') {
             steps {
