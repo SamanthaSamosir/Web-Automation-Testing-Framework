@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the repo
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/SamanthaSamosir/Web-Automation-Testing-Framework.git'
             }
         }
