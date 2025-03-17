@@ -65,11 +65,7 @@ pipeline {
         }
         stage('Publish Allure Report') {
             steps {
-                allure([
-                    commandline: 'Allure',
-                    report: 'allure-report',
-                    results: 'allure-results'
-                ])
+                bat 'allure generate allure-results --clean -o allure-report'
             }
         }
 
