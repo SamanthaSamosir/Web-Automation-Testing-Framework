@@ -66,9 +66,13 @@ pipeline {
         
         stage('Publish Allure Report') {
             steps {
-                allure([
-                    results: [[path: 'allure-results']]
-                ])
+                script {
+                    allure([
+                        results: [[path: 'allure-results']],
+                        report: [[path: 'allure-report']],
+                        commandline: 'Allure' // Use the name configured in Global Tool Configuration
+                    ])
+                }
             }
         }
         
