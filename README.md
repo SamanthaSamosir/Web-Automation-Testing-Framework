@@ -5,7 +5,7 @@ An example of **web automation testing framework** using **Selenium/WebdriverIO*
 ## Features
 - **Bank Manager Login Automation**
   - Add Customer
-- **Ngrok implementation***
+- **Ngrok implementation**
 - **Allure Report Integration**
 - **Test Execution with WebdriverIO** 
 - **CI/CD Setup with GitHub and Jenkins**
