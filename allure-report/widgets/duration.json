@@ -1,1 +1,0 @@
-[{"uid":"60c4a739b096405c","name":"should delete a customer successfully","time":{"start":1741796745386,"stop":1741796761278,"duration":15892},"status":"broken","severity":"normal"},{"uid":"4ea9ecde6e0b3ca4","name":"should add a new customer successfully","time":{"start":1741799590111,"stop":1741799597038,"duration":6927},"status":"passed","severity":"normal"}]

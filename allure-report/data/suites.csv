@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","15892","should delete a customer successfully","","Wed Mar 12 23:25:45 ICT 2025","broken","Wed Mar 12 23:26:01 ICT 2025","","Delete Customer Test","",""
-"","6927","should add a new customer successfully","","Thu Mar 13 00:13:10 ICT 2025","passed","Thu Mar 13 00:13:17 ICT 2025","","Add Customer Test","",""
