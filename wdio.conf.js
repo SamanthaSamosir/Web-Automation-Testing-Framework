@@ -133,6 +133,12 @@ exports.config = {
             disableWebdriverScreenshotsReporting: false,
         }]
     ],
+    afterTest: async function (test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            await browser.saveScreenshot(`./screenshots/${test.title}.png`);
+        }
+    },
+    
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

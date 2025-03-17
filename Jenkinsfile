@@ -53,7 +53,8 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                bat 'npx wdio --spec test/specs/addCustomer.spec.js'
+                bat 'mkdir screenshots || echo "Screenshots folder exists"'
+                bat 'npx wdio run wdio.conf.js'
             }
         }
         
@@ -71,6 +72,12 @@ pipeline {
             }
         }
         
+        stage('Archive Screenshots') {
+            steps {
+                archiveArtifacts artifacts: 'screenshots/*.png', fingerprint: true
+            }
+        }
+
         stage('Archive Test Results') {
             steps {
                 archiveArtifacts artifacts: '**/allure-report/**', fingerprint: true
