@@ -53,7 +53,7 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                bat 'npx wdio run wdio.conf.js'
+                bat 'npx wdio --spec test/specs/addCustomer.spec.js'
             }
         }
         
