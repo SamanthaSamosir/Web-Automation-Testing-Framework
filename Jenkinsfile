@@ -53,7 +53,7 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                bat 'mkdir screenshots || echo "Screenshots folder exists"'
+                bat 'if not exist screenshots mkdir screenshots'
                 bat 'npx wdio run wdio.conf.js'
             }
         }
