@@ -67,7 +67,8 @@ pipeline {
             steps {
                 allure([
                     commandline: 'Allure',
-                    results: ['allure-results']
+                    report: 'allure-report',
+                    results: 'allure-results'
                 ])
             }
         }
