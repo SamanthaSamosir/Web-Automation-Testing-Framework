@@ -52,7 +52,7 @@ allure open allure-report
 - **Webhook**: Trigger Jenkins jobs whenever code is pushed to GitHub.
 
 ## License
-This project is licensed under the ****.
+This project is licensed under the **GNU General Public License v3.0**.
 
 ---
 🚀 **Created by [Samantha Samosir](https://github.com/SamanthaSamosir), empowering quality automation in web applications!**
