@@ -1,4 +1,4 @@
-# Setting Up a Web Test Automation Framework with WebdriverIO, Selenium, and CI/CD
+# Web Test Automation Framework with WebdriverIO, Selenium, and CI/CD
 
 An example of **web automation testing framework** using **Selenium/WebdriverIO** with **JavaScript** to validate banking web application **(https://globalsqa.com/angularJs-protractor/BankingProject/#/login)**. This project implements **Page Object Model (POM)**, **Allure Reporting**, and **CI/CD pipelines** using **GitHub** and **Jenkins**.
 
